@@ -1,0 +1,23 @@
+.item-category{
+  background-color: rgb(98, 164, 98);
+  font-size: 2.5em;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  max-width: auto;
+  text-align: center;
+}
+
+.item-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  list-style-type: none;
+}
+
+.item-list :hover, .item-category:hover{
+  cursor: pointer;
+}
+
