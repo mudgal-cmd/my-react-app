@@ -1,0 +1,33 @@
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div .button-group{
+  display: flex;
+  flex-direction: row;
+}
+
+div .increment-btn, .decrement-btn, .reset-btn{
+
+  background-color: rgba(85, 181, 225, 0.81);
+  font-size: 1em;
+  border: none;
+  margin: 10px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+
+}
+
+div .increment-btn, 
+div .decrement-btn, 
+div .reset-btn:hover{
+  cursor: pointer;
+}
+
+.counter{
+  font-size: 7em;
+}
