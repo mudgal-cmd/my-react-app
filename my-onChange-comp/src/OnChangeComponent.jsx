@@ -27,7 +27,7 @@ function OnChangeComponent(){
       <textarea placeholder="Delivery Instructions" rows={10} cols={30}/>
       <br/>
       <br/>
-      <div>
+      {/* <div>
         <h4>Payment Method: </h4>
         <label>
         <input type="radio" value="VISA" name="payment-type" defaultChecked={true} onChange={(e) => handlePaymentMethod(e)}/>
@@ -46,7 +46,15 @@ function OnChangeComponent(){
         PAYPAL
         </label>
       </div>
-      <p>Opted Payment Method: {payment}</p>
+      <p>Opted Payment Method: {payment}</p> */}
+      <select onChange={(e) => handlePaymentMethod(e)}>
+        <option value="">Select Payment Method</option>
+        <option value="VISA" selected={true}>VISA</option>
+        <option value="MASTERCARD">MASTERCARD</option>
+        <option value="AMEX">AMEX</option>
+        <option value="PAYPAL">PAYPAL</option>
+      </select>
+      <h4>Payment Method: {payment}</h4>
      
     </>
 
